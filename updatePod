@@ -1,0 +1,40 @@
+#!/bin/bash
+branch=${1}
+if [ "${branch}" = "" ]; then
+    branch=${GIT_BRANCH}
+    if [ "${branch}" = "" ]; then
+        echo "请在Jenkins构建环境中运行，或输入分支名称"
+        exit 1
+    fi
+    branch=${branch#*origin/}
+fi
+echo "branch is: ${branch}"
+
+git checkout -b ${branch} origin/${branch}
+git checkout ${branch}
+git reset --hard origin/${branch}
+git pull --rebase
+
+#/usr/local/bin/pod repo update mucang-ios-framework-mucang-specs
+#/usr/local/bin/pod cache clean --all
+#/usr/local/bin/pod install --verbose
+#/usr/local/bin/pod update 
+
+//added by lihux:很诡异的事情，jekins每次调用本脚本，总是漏掉两个方法
+git add .
+git_status=$(git status)
+git_status_clean=$(echo $git_status | grep "nothing to commit, working tree clean")
+if [ "${git_status_clean}" != "" ]; then
+	echo "pod install has no changes"
+else
+	git add --all
+	git commit -m "更新依赖 by jenkins build"
+	git push origin ${branch}:${branch}
+        echo "pod install commit has pushed to branch: ${branch}"
+fi
+
+commit=$(git log -1 --pretty=format:"%H")
+GIT_COMMIT=${commit}
+echo "Current GIT_COMMIT is: ${GIT_COMMIT}"
+
+
