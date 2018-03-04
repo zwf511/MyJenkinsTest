@@ -359,6 +359,7 @@
 			baseConfigurationReference = 180473836AF6493CEBE7D79E /* Pods-MyJenkinsTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: jiang yinghao (Z3ZY8BDF3Y)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = VY36DAXN9S;
@@ -366,8 +367,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.mucang.ios.jiakaobaodianhuoche;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "857dddd8-61cd-4e9f-92ca-ee2fa49085a1";
-				PROVISIONING_PROFILE_SPECIFIER = "教练宝典Debug";
+				PROVISIONING_PROFILE = "d53a957d-73e0-4880-9a38-96983677537f";
+				PROVISIONING_PROFILE_SPECIFIER = "教练宝典AdHoc";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -377,6 +378,7 @@
 			baseConfigurationReference = D8C394D22F1D56F59B94D34E /* Pods-MyJenkinsTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: JIANG YINGHAO (VY36DAXN9S)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = VY36DAXN9S;
