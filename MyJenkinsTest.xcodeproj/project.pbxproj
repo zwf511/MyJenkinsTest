@@ -13,6 +13,7 @@
 		8259FD2E204BCF9A003CEE13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8259FD2D204BCF9A003CEE13 /* Assets.xcassets */; };
 		8259FD31204BCF9A003CEE13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8259FD2F204BCF9A003CEE13 /* LaunchScreen.storyboard */; };
 		8259FD34204BCF9A003CEE13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8259FD33204BCF9A003CEE13 /* main.m */; };
+		8295C849204C1E0400E9F3BD /* MyJenkinsTest-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8295C848204C1E0400E9F3BD /* MyJenkinsTest-Info.plist */; };
 		BCB9A865D1BEB6E78E7919B5 /* libPods-MyJenkinsTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1F63FE0FA72AB2EF1D9FBD /* libPods-MyJenkinsTest.a */; };
 /* End PBXBuildFile section */
 
@@ -27,8 +28,8 @@
 		8259FD2B204BCF9A003CEE13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8259FD2D204BCF9A003CEE13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8259FD30204BCF9A003CEE13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8259FD32204BCF9A003CEE13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8259FD33204BCF9A003CEE13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8295C848204C1E0400E9F3BD /* MyJenkinsTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MyJenkinsTest-Info.plist"; sourceTree = "<group>"; };
 		D8C394D22F1D56F59B94D34E /* Pods-MyJenkinsTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyJenkinsTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyJenkinsTest/Pods-MyJenkinsTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,7 +81,7 @@
 				8259FD2A204BCF9A003CEE13 /* Main.storyboard */,
 				8259FD2D204BCF9A003CEE13 /* Assets.xcassets */,
 				8259FD2F204BCF9A003CEE13 /* LaunchScreen.storyboard */,
-				8259FD32204BCF9A003CEE13 /* Info.plist */,
+				8295C848204C1E0400E9F3BD /* MyJenkinsTest-Info.plist */,
 				8259FD33204BCF9A003CEE13 /* main.m */,
 			);
 			path = MyJenkinsTest;
@@ -129,7 +130,7 @@
 				TargetAttributes = {
 					8259FD20204BCF99003CEE13 = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -159,6 +160,7 @@
 				8259FD31204BCF9A003CEE13 /* LaunchScreen.storyboard in Resources */,
 				8259FD2E204BCF9A003CEE13 /* Assets.xcassets in Resources */,
 				8259FD2C204BCF9A003CEE13 /* Main.storyboard in Resources */,
+				8295C849204C1E0400E9F3BD /* MyJenkinsTest-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,12 +359,15 @@
 			baseConfigurationReference = 180473836AF6493CEBE7D79E /* Pods-MyJenkinsTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = VY36DAXN9S;
 				INFOPLIST_FILE = "MyJenkinsTest/MyJenkinsTest-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zwf.MyJenkinsTest;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.mucang.ios.jiakaobaodianhuoche;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "857dddd8-61cd-4e9f-92ca-ee2fa49085a1";
+				PROVISIONING_PROFILE_SPECIFIER = "教练宝典Debug";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -372,12 +377,15 @@
 			baseConfigurationReference = D8C394D22F1D56F59B94D34E /* Pods-MyJenkinsTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = VY36DAXN9S;
 				INFOPLIST_FILE = "MyJenkinsTest/MyJenkinsTest-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zwf.MyJenkinsTest;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.mucang.ios.jiakaobaodianhuoche;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d53a957d-73e0-4880-9a38-96983677537f";
+				PROVISIONING_PROFILE_SPECIFIER = "教练宝典AdHoc";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
