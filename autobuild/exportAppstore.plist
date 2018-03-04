@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>method</key>
+	<string>app-store</string>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>cn.mucang.ios.jiakaobaodianhuoche</key>
+		<string>教练宝典AppStore</string>
+	</dict>
+	<key>signingCertificate</key>
+	<string>30A27B93EE28FF553617DD52BB050798834FC432</string>
+	<key>signingStyle</key>
+	<string>manual</string>
+	<key>stripSwiftSymbols</key>
+	<true/>
+	<key>teamID</key>
+	<string>VY36DAXN9S</string>
+	<key>uploadBitcode</key>
+	<true/>
+	<key>uploadSymbols</key>
+	<true/>
+</dict>
+</plist>
