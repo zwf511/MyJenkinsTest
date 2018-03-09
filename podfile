@@ -1,7 +1,7 @@
 
 platform :ios,'8.0'
 source 'https://github.com/CocoaPods/Specs.git'
-source 'https://gitee.com/huaer511/MyJenkinsTest.git'
+#source 'https://gitee.com/huaer511/MyJenkinsTest.git'
 target 'MyJenkinsTest' do
     pod "AFNetworking", "~> 3.0"
 end
