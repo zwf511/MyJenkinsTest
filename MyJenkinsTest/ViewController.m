@@ -24,9 +24,9 @@
     //c
     NSLog(@"%@",@"Do any additional setup after loading the view, typically from a nib");
     NSLog(@"%@",@"hello");
+    NSLog(@"world");
     //上海
     //北京
-    
 }
 
 
