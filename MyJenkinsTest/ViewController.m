@@ -21,7 +21,7 @@
 
 - (void)test1 {
     //b
-    
+    //c
     NSLog(@"%@",@"Do any additional setup after loading the view, typically from a nib");
 }
 
