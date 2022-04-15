@@ -25,13 +25,18 @@
     NSLog(@"%@",@"Do any additional setup after loading the view, typically from a nib");
     NSLog(@"%@",@"hello");
     NSLog(@"world");
+    NSLog(@"hello0");
     //上海
     //北京
+    //合肥
     //广州
     NSLog(@"hello1");
     //美丽
     NSLog(@"world2");
     //深圳
+    
+    
+    
 }
 
 
